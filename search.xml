@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[SSR使用教程|Hayai-SSR]]></title>
+    <url>%2F2019%2F01%2F25%2Fssruse%2F</url>
+    <content type="text"><![CDATA[写在开头本教程为ShadowsocksR在Windows、Linux、Android以及iOS平台上的使用教程。 推荐购买Hayai-SSR,非常快速稳定的SSR服务商。点此进入 零、一切的开始进入你的服务商主界面（推荐Hayai-SSR），复制你的订阅链接。 一、Windows客户端1、下载本体：点击这里 2、解压后，运行ssr.exe。运行后，在后台可见ssr客户端。 右键单击此图标，在弹出的菜单中，依次选择“服务器订阅”—“SSR服务器订阅设置…” 3、在出现的界面中，勾选“自动更新”，并单击“Add”。 4、将订阅链接填写到网址输入框，并单击“确定”。 5、重新右键单击ssr客户端，在弹出的菜单中，依次选择“服务器订阅”—“更新SSR服务器订阅（不通过代理）”。 6、等待更新完成，重新在菜单中选择“服务器”—“默认”，选择你心仪的节点。Hayai-SSR中，有多个节点可供使用。其中提示用户剩余时间和剩余流量的节点为假节点，仅起到提示作用，请勿选择此节点。 7、依次选择“系统代理模式”—“PAC模式”，此操作帮助用户减少流量损耗。 8、依次选择“代理规则”—“绕过局域网和大陆”，操作益处同上。 9、最后，选择“PAC”—“更新PAC为GFWList”，更新PAC文件。 10、下次使用时直接打开软件即可。 二、Linux客户端1、下载本体(electron-ssr)：点击这里（64位） 2、打开终端，在终端中键入如下代码。 赋予权限12chmod a+x electron-ssr-0.2.4-x86_64.AppImage./electron-ssr-0.2.4-x86_64.AppImage 3、进入主界面，勾选“自动下载SSR”，并单击“知道了”。 4、在主界面点击左下角“添加”旁边的三角形，并单击“添加订阅地址”。 在如下界面中，单击“添加”，并填入你的订阅链接，最后单击加号完成订阅。 如果使用的是KDE，请在系统设置中找到代理设置，按照下图进行更改，并单击“应用”。 下次使用直接单击软件即可。 三、Android客户端1、下载本体：点击这里 注：如果使用华为智能手机，请最好更换手机。 2、打开软件，并点击右上角的ShadowsocksR图标。 3、在接下来的界面点击加号，并选择第一个“添加\升级SSR订阅” 在出现的窗口中点击“添加URL”，并填入你的订阅链接。 4、返回主界面，在如图位置设置为“绕过局域网和大陆”。 最后，点击右上角的小飞机图标，即可使用。 四、iOS客户端—Quantumult注：如果您没有下载此软件，并且是国区用户，请根据以下方法下载软件。 （1）、在您的iPhone设备上登录如下AppleID。帐号：doubledou2018@163.com密码：Mianliu890（2）、在AppStore下载Quantumult。 1、打开软件，点击“设置”，然后点击“订阅”。 2、添加订阅，填写你的订阅链接，勾选“更新检测”，并保存。 3、回到主界面，开启ssr。]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>SSR</category>
+      </categories>
+      <tags>
+        <tag>SSR</tag>
+        <tag>Hayai</tag>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux下好用的4款ss/ssr客户端]]></title>
+    <url>%2F2019%2F01%2F25%2Flinuxssr%2F</url>
+    <content type="text"><![CDATA[在当今的时代，高墙逐渐变厚，大陆人想连接世界变得越来越困难。但是，有助于一些智慧的人群，让我们身处大陆的人也能链接世界。 一、Shadowsocks标准客户端Shadowsocks项目：Github相关文档已被删除。但是还是被大部分人保存了下来。Shadowsocks官方linux客户端并没有GUI界面，需要手动编译配置。 Debian/Ubuntu12apt-get install python-pippip install shadowsocks Arch Linux12sudo pacman -S yaourtyaourt shadowsocks-git CentOS1234sudo yum install python-setuptoolseasy_install pippip install --upgrade pipsudo pip install shadowsocks 二、ShadowsocksR标准客户端ShadowsocksR项目：GithubShadowsocksR官方linux客户端集成了ss的优良传统，也没有GUI界面，仍需手动配置。 安装1git clone https://github.com/ssrbackup/shadowsocksr 以下为GUI界面版ss及ssr客户端。 三、Shadowsocks-Qt5这是基于Qt的GUI版Shadowsocks客户端，Github项目：点击 Shadowsocks-Qt5是用Qt 5用C ++编写的。 支持流量统计 支持服务器延迟（滞后）测试 同时使用多个配置文件 CentOS 71234wget https://copr.fedorainfracloud.org/coprs/librehat/shadowsocks/repo/epel-7/librehat-shadowsocks-epel-7.reposudo mv librehat-shadowsocks-epel-7.repo /etc/yum.repos.d/sudo yum updatesudo yum install -y shadowsocks-qt5 Ubuntu123sudo add-apt-repository ppa:hzwhuang/ss-qt5sudo apt-get updatesudo apt-get install shadowsocks-qt5 Debian安装主要依赖12sudo apt-get install python-m2cryptosudo apt-get install qt5-qmake qtbase5-dev libqrencode-dev libappindicator-dev libzbar-dev libbotan1.10-dev 安装libQtShadowsocks123456git clone https://github.com/shadowsocks/libQtShadowsocks.gitcd libQtShadowsockssudo dpkg-buildpackage -uc -us -bcd ..sudo dpkg -i libqtshadowsocks_1.8.0-1_amd64.debsudo dpkg -i libqtshadowsocks-dev_1.8.0-1_amd64.deb 安装 shadowsocks-qt51234cd shadowsocks-qt5sudo dpkg-buildpackage -uc -us -bcd ..sudo dpkg -i shadowsocks-qt5_2.6.0-1_amd64.deb Arch Linux12sudo pacman -S yaourtyaourt shadowsocks-qt5 四、electron-ssrelectron-ssr是一个非常美观的GUI界面SSR客户端，支持订阅等若干高级功能。另外，Appimage文件支持几乎所有Linux发行版，不用考虑依赖问题。 Github项目：点击Appimgage下载：点击]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>SSR</tag>
+        <tag>Hayai</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[SSR的选择：Hayai-SSR]]></title>
+    <url>%2F2019%2F01%2F25%2Fchoosessr%2F</url>
+    <content type="text"><![CDATA[在现如今的时代，新社会主义道路，世界多极化趋势日益加深，中国的改革开放，人们生活日益美好……. 咳咳，扯远了。 是的，我们每个人都处于这个充满正能量的世界，处于一个童话般和谐的世界。没有枪声炮响，没有群众反抗，没有来自国外的喧嚣。最后，贴出官网：是的，国民们所谓的好生活，或许是真实的，又或许只是自欺欺人？ 然而连自欺欺人都不是，国家骗了人民。政府，用它那极高的权利，不停地禁锢着人们的思想。 所以，到底是什么禁锢了国人的思想呢？关于这个问题，会有很多很多不同的答案，有很多很多不同方面的答案，但是，归根结底，都指向了一个方向：政府的管理。 身处中国大陆，难免被政府洗脑。在中学课本上，政治课就开始，说明中国是一个人民民主专政的国家，对公民实行民主，对敌人实行专政。 然而民主呢？没有。国家对舆论的引导、封锁已经达到了一种很高的境界，对人们的控制也是慢慢增多。是的，在国家面前的人民，只不过是利益的工具。只要维护好他们自身的利益，我们的利益又能如何？ GFW（Great Fare Wall）防火长城，将国民与国外的真实世界割断联系。大陆人民，真正成为了笼中之鸟。或者说这个时候，还在清醒着的人们，都意识到了一个问题：中国正在固步自封。 独裁的国家，腐败的思想，混乱的社会。终于，还清醒着的人们见到了国家的真面目：独裁。那些掩人耳目的法律，实则都是维护国家政权。 近几年VPN被列为非法，又轰动了一时。但是，一些聪明的人还在想着解决方法，这时候，ss、ssr、v2ray、vmess等等都出现了。作为翻墙的工具，饱受人们欢迎。ss被破了，ssr还在，v2ray还在…… 后来，等我自己尝试翻墙，看到墙外世界的时候，终于觉得自己不再被约束，终于有了自由之感。 目前，在新的两会召开之际，这些翻墙软件等还是有很大的危险。但是，ssr还是十分稳定，不会被轻易破译。 通过连接未被墙的服务器作为中介，来连接一些原本被墙的服务器，通过混淆加密的方式来使用户的信息得到保障，这就是ssr的工作方式。 人们于是又抓到了商机，Hayai-SSR,就是如此。 作为一个新的SSR服务商，他具有先天优势。因为在那些贪财而不顾社会的服务商中，Hayai是良心的。考虑到国人的思想禁锢，Hayai-SSR推出了2元/10GB试用，不仅价格低，还保证了用户最优的体验，同时使用户了解当今的社会形势，一举两得。 Hayai-SSR提供最高的性价比，同时也为不懂的人打开道路。Hayai通过宣传国外视频、文章的方式，发展国内的普通用户。希望通过这种方式，国人能慢慢进行理智思考。救国救民，义不容辞。 Hayai-SSR，快速不掉线。当你打开YouTube，你不会用看视频的时间来等待加载广告。当你使用Google，将不会被异常流量的验证耽误很长时间。使用Hayai的服务，你将会体验到如德芙般的畅快体验，杜绝卡顿、超时。 Hayai-SSR，一个最良心的SSR服务商。 最后，贴出广告（不是最后，贴出官网：https://www.hayaissr.xyz]]></content>
+      <categories>
+        <category>讨论</category>
+      </categories>
+      <tags>
+        <tag>SSR</tag>
+        <tag>Hayai</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[建设这个博客]]></title>
+    <url>%2F2019%2F01%2F15%2Ffirst%2F</url>
+    <content type="text"><![CDATA[一月，天朗气清，惠风和畅。因为这样，这个博客就诞生了。Sakitami的博客 当然，这个博客的建设还是和以下网站有着极大的关系。 Hayai-SSR - 为世界上所有的自由而战（雾 Hayai-SSRwww.hayaissr.xyz 正是因为这个网站的存在，才有了这个博客。因为，这是我正在运行的服务啊(哭 这个博客，将会成为我成长&amp;学习的记录。动漫，文学，IT等等，都会呈现在这里。那就一起成长吧]]></content>
+  </entry>
+</search>
